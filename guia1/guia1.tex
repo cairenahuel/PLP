@@ -1,0 +1,62 @@
+\documentclass[a4,10pt]{article}
+\input{../nahuelMacros}
+\usepackage{graphicx}
+\begin{document}
+\includegraphics[width=\linewidth]{img/ejercicio1.png}
+
+max2::(Float, Float)-> Float \hfill no currificada
+
+normaVectorial::(Float, Float)-> Float \hfill no currificada
+
+subtract:: (Num t1) => t1 -> t1 -> t1
+
+predecesor:: Num t1 => t1 -> t1
+
+evaluarEnCero:: (Num t1) => (t1 -> t2) -> t2
+
+evaluarDosVeces:: (t1 -> t1) -> t1 -> t1
+
+flipAll:: [a->b->c]->[b->a->c]
+
+flipRaro:: b->(a->b->c)->a->c
+
+\vspace*{20px}
+
+max2Curry::(Num a)=> a -> a -> a
+
+max2Curry x y
+
+    |   x <= y = y
+
+    |   otherwise = x   
+
+\vspace*{20px}
+
+normaVectorialCurry:: Floating a => a -> a -> a \hfill {\color{purple}$\longleftarrow$ No se porque es floating pero asi lo dice ghci}
+
+normaVectorialCurry x y = sqrt (x*x+y*y)
+
+\vspace*{10px}
+
+\includegraphics[width=\textwidth]{img/ejercicio2.png}
+
+{\color{red}{\LARGE!!!} Solucion asumiento que por una funcion de dos argumentos nos referimos a una dupla}
+
+\vspace*{\baselineskip}
+
+curry::((a,b)->c) -> a -> b -> c
+
+curry f x y = f (x,y)
+
+\vspace*{\baselineskip}
+
+uncurry:: (a -> b -> c) -> (a,b) -> c
+
+uncurry f (x,y) = f x y
+
+3- No...? (No me queda claro, pensando en el tipo como se representaria una arbitraria\\ cantidad de argumentos?)
+
+Ejercicio 3 en un .hs
+
+
+\end{document}

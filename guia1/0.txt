@@ -1,0 +1,32 @@
+null:: [a]->Bool    #Obvio que lo tuve que buscar
+Dada una lista devuelve true si esta vacia.
+
+head:: [a]->a
+Dada una lista devuelve el primer elemento de ella.
+
+tail:: [a]->[a]
+Dada una lista devuelve la misma sin el primer elemento.
+
+init::[a]->[a]
+Dada una lista devuelve la misma sin el ultimo elemento !!LA LISTA NO DEBE SER VACIA
+
+last::[a]->[a]  #no se si es correcto esta pero asumo que es asi
+Alerta de falopinha: Dada una lista devuelve el ultimo elemento.
+
+drop::Int -> [a]->[a]
+Dada un entero n y una lista devuelve la lista sin los primeros n elementos
+
+take::Int -> [a]->[a]   #asumo que es esto (en base a la anterior)
+Dado un entero n y una lista devuelve los primeros n elementos de la lista
+
+(++)::[a]->[a]->[a]
+Concatena dos listas
+
+concar
+same as above (?)
+
+reverse::[a]->[a]
+Reversea (?) una lista
+
+elem::Eq a => a->t a->Bool  #obvio que lo busque
+Devuelve true si el elemento de tipo a del primer parametro ocurre en la estructura del segundo parametro
